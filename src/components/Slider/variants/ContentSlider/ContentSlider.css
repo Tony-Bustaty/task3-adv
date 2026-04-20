@@ -1,0 +1,57 @@
+.contentSlider {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+
+  .items-container {
+    display: flex;
+    gap: 4rem;
+    .slider-window {
+      width: 100%;
+      overflow: hidden;
+      min-width: 0;
+       padding-top: 40px; 
+      flex: 1;
+    }
+
+    .slider-track {
+      display: flex;
+      transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+      will-change: transform;
+    }
+
+    .slide {
+      padding: 0 0.5rem;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      flex: 0 0 33.333333%;
+    }
+  }
+  .more-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      font-family: "Raleway";
+      font-weight: 700;
+      font-size: 1.8rem;
+      line-height: 130%;
+        }
+    .buttons {
+      display: flex;
+      gap: 2rem;
+       button.arrow-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1.2rem;
+      background-color: #fff;
+      border: 2px solid #000;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+    }
+  }
+}

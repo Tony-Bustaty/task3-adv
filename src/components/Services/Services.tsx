@@ -3,7 +3,7 @@ import TopicMessage from "../ui/TopicMessage";
 import "./Services.css";
 import { FaCrown, FaUserFriends } from "react-icons/fa";
 import { RiMovie2Fill } from "react-icons/ri";
-import Service from "./Service";
+import Card from "../ui/Card/Card";
 function Services() {
   const services = [
     {
@@ -55,7 +55,7 @@ function Services() {
         </p>
       </div>
       <div className="services">
-        {services.map(service=><Service key={service.title} service={service}/>)}
+        {services.map(service=><Card key={service.title}  data={service}/>)}
       </div>
     </div>
   );

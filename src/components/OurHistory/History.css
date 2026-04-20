@@ -1,0 +1,199 @@
+.our-history {
+  margin-top: 20rem;
+}
+.intro {
+  margin-bottom: 10rem;
+}
+.history-container {
+  background: #ffffff;
+  border: 2px solid #262626;
+  box-shadow: 6px 6px 0px 2px #1e1e1e;
+  border-radius: 1.2rem;
+  display: flex;
+  gap: 4rem;
+  padding: 15rem;
+}
+
+.timeline-line-container {
+  .timeline-line {
+    width: 4px;
+    height: calc(100% - 160px);
+    transform: translateY(50px);
+    background: #ffbe99;
+    border-radius: 3px;
+    .timeline-line-black {
+      width: 1px;
+      height: 100%;
+      background: #1a1a2e;
+      margin: auto;
+      border-radius: 3px;
+    }
+  }
+}
+
+.timeline-items {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 5rem;
+  position: relative;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 5rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: #fff;
+  border: 3px solid #262626;
+  border-radius: 50%;
+  z-index: 2;
+  &.left {
+    left: -5.4rem;
+    top: 5.1rem;
+    &::after {
+      content: "";
+      display: block;
+      width: 25px;
+      position: absolute;
+      left: 17px;
+      top: 3px;
+      height: 9px;
+      background-color: #ffbe99;
+    }
+  }
+  &.right {
+    left: -0.9rem;
+    &::before {
+      content: "";
+      display: block;
+      width: 25px;
+      position: absolute;
+      left: -28px;
+      top: 7px;
+      height: 3px;
+      background-color: #1a1a2e;
+    }
+  }
+}
+
+.year-box {
+  padding: 3rem 5rem;
+  background: #fff;
+  border: 3px solid #1a1a2e;
+  border-radius: 12px;
+  box-shadow: 4px 4px 0 #1a1a2e;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  z-index: 1;
+}
+
+.year-icon {
+  color: #f4a020;
+  width: 55px;
+  height: 55px;
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+  }
+}
+
+.year-text {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 130%;
+}
+
+.timeline-content {
+  align-self: center;
+  flex: 1;
+  padding-top: 0.5rem;
+}
+
+.timeline-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 130%;
+}
+
+.timeline-description {
+  font-family: "Outfit";
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 130%;
+  color: #4a4a4a;
+}
+
+@media (max-width: 1100px) {
+  .our-history {
+    margin-top: 8rem;
+  }
+  .intro {
+    margin-bottom: 5rem;
+  }
+  .history-container {
+    gap: 5rem;
+    padding: 5rem 2rem 5rem 1rem;
+  }
+
+  .timeline-line-container {
+    .timeline-line {
+        height: calc(100% - 323px);
+    }
+  }
+
+  .timeline-items {
+    gap: 5rem;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .timeline-dot {
+    &.left {
+      left: -6.1rem;
+      &::after {
+        width: 32px;
+      }
+    }
+    &.right {
+      &::before {
+        width: 32px;
+        left:-34px;
+      }
+    }
+  }
+
+  .year-box {
+    padding: 2rem 2.4rem;
+    gap: 1.6rem;
+  }
+
+  .year-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .year-text {
+    font-size: 3.8rem;
+  }
+
+  .timeline-title {
+    font-size: 2.2rem;
+  }
+
+  .timeline-description {
+    font-size: 1.6rem;
+  }
+}

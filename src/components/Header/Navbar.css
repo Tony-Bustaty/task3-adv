@@ -8,6 +8,12 @@
 }
 .logo-container {
 padding:2rem 2.4rem;
+max-width: 23rem;
 background-color: var(--logo-background);
 }
+@media (max-width:1100px){
+.logo-container {
+padding:1.6rem 2rem;
 
+}
+}

@@ -6,9 +6,10 @@ function TopicMessage({ message }: TopicMessageProps) {
     <div
       style={{
         backgroundColor: "#fff",
-        padding: ".8rem 1.4rem",
+        padding: "1rem 2rem",
         border: "2px solid #000",
         borderRadius: "6px",
+        width:'fit-content'
       }}
     >
       <p
@@ -17,6 +18,7 @@ function TopicMessage({ message }: TopicMessageProps) {
           fontWeight: 500,
           fontStyle: "Medium",
           fontSize: "1.6rem",
+          margin:0
         }}
       >
         {message}
