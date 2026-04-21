@@ -4,7 +4,7 @@ interface SectionHeroProps{
     title:string,
     description:string
 }
- 
+ import "./SectionHero.css"
  function SectionHero({description,message,title}:SectionHeroProps) {
 
    return (
