@@ -1,4 +1,4 @@
-.about-hero {
+.section-hero {
   background: #ffffff;
   padding: 10rem 8rem;
   border: 2px solid #262626;
@@ -43,7 +43,7 @@
   }
 }
 @media (max-width: 1100px) {
-  .about-hero {
+  .section-hero {
     padding: 5rem 3rem;
     .image-container {
       width: 10rem;
