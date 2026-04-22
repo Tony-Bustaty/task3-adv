@@ -1,0 +1,18 @@
+.filter-button {
+  border: 2px solid #333333;
+  padding: 1rem 1.6rem;
+  font-family: "Outfit";
+  font-weight: 600;
+  font-size: 1.6rem;
+  border-radius: 0.6rem;
+  background-color: #fff;
+  cursor: pointer;
+}
+.filter-button.active {
+  background-color: #ffefe5 !important;
+}
+.filter-button:hover,
+.filter-button:focus {
+  background-color: inherit; /* Prevents hover from overriding inactive state */
+  outline: none;
+}

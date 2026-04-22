@@ -1,0 +1,11 @@
+.features {
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  .card{
+    p{
+        max-width:39rem;
+    }
+  }
+}

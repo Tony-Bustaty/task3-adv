@@ -36,12 +36,6 @@
   justify-content: center;
 }
 .service {
-    background-color: #fff;
-    position: relative;
-    padding:6rem 4rem;
-     border: 2px solid #000;
-    border-radius: 8px;
-   box-shadow: 4px 4px 0px 2px #1E1E1E;
   .icon {
     display: flex;
     justify-content: center;

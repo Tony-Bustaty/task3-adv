@@ -56,7 +56,7 @@ function Members() {
         />
       </div>
       <div className="members-list">
-        {members.map(member=><MemberItem item={member}/>)}
+        {members.map(member=><MemberItem key={member.title} item={member}/>)}
       </div>
     </section>
   );

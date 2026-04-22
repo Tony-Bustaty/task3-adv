@@ -11,3 +11,9 @@
     background-size: cover;
    
 }
+@media (max-width:768px){
+    .top-banner{
+
+        background-image: url("/assets/Top Banner-mobile.png");
+    }
+}

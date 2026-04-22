@@ -38,30 +38,18 @@ export function useSlider(totalItems: number, type: SliderType) {
         mq.removeEventListener("change", handleChange),
       );
     };
-    // const handleResize = () => {
-    //   const newVisible = calcVisible();
-    //   setVisible(prev => {
-    //     if (prev !== newVisible) {
-    //       setIndex(i => Math.min(i, Math.max(0, totalItems - newVisible)));
-    //     }
-    //     return newVisible;
-    //   });
-    // };
-    // handleResize();
-    // window.addEventListener('resize', handleResize);
-    // return () => window.removeEventListener('resize', handleResize);
   }, [calcVisible, totalItems]);
 
-  const maxIndex = Math.max(0, totalItems - visible);
+  const maxIndex =type==="gallery"?  Math.max(0, Math.ceil(totalItems / visible) - 1): Math.max(0, totalItems - visible) ;
   const next = useCallback(
-    () => setIndex((p) => (p >= maxIndex ? 0 : p + 1)),
+    () => setIndex((p) => (p >= maxIndex? 0 : p + 1)),
     [maxIndex],
   );
   const prev = useCallback(
     () => setIndex((p) => (p <= 0 ? maxIndex : p - 1)),
     [maxIndex],
   );
-  const trackOffset = index * (100 / visible);
+  const trackOffset =type==="gallery" ? index * 100 : index * (100 / visible);
 
   return { index, visible, next, prev, trackOffset };
 }
